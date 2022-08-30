@@ -1,0 +1,48 @@
+""" The Mystical Octosphere is a game that answers your 
+yes no type questions with any one of the 8 per defined responses randomly. """
+
+import random
+ 
+while(True):
+    def number_to_fortune(number):
+        
+        if (number==0):
+            return "Yes, for sure !!"
+        elif (number == 1):
+            return "Probably Yes."
+        elif (number==2):
+            return "Seems like Yes..."
+        elif (number==3):
+            return "Definately NOT!!"
+        elif ( number==4):
+            return "Probably Not."
+        elif ( number==5):
+            return "I really doubt that..."
+        elif ( number==6):
+            return "Not sure, check back later!"
+        elif (number==7):
+            return "I really can't tell."
+        elif (number==8):
+            return " Main Nahi batayega :))"    
+        else:
+            return " Something was wrong with the input."    
+    
+    
+    def mystical_octosphere(question):
+        
+        print (" Your question was..." + question)
+
+        print (" You shake the mystical octosphere")
+            
+        answer_number= random.randrange(0,9)
+            
+        answer_fortune= number_to_fortune(answer_number)
+    
+        print ("The cloudy liquid swirls, and a reply comes into view...")
+        
+        print (" The mystical octosphere says " + answer_fortune)
+        ####print ("   ")
+
+    
+    question=input("Enter Your Question:\n") 
+    mystical_octosphere(question)
