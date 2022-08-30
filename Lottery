@@ -1,0 +1,17 @@
+# Takes five numbers from users and genrates a random lottery number
+#  if your numbers matches with the lottery number you win th lottery.
+
+import random
+def lottery():
+    
+    a= int(input("Select your five Lottery numbers in the range of 0 to 100:\n"))
+    b= int(input())
+    c= int(input())
+    d= int(input())
+    e= int(input())
+
+    print(" Your selected lottery numbers are: "+str(a)+", "+str(b)+", "+str(c)+", "+str(d)+", "+str(e) )
+    
+    print ("And the lottery number is "+ str(random.randrange(0,100)))
+    
+lottery()
